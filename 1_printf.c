@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int numChars;
-	/* int num; */
+	int num;
 	char c;
 	char *s;
 	va_list ap;
@@ -51,12 +51,12 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				++numChars;
 				break;
-		/*
 			case 'd':
+			case 'i':
 				num = va_arg(ap, int);
 				numChars += printNum(num);
 				break;
-		 */
+		 
 		}
 		format += 2;
 	}
